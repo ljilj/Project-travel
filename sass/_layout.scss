@@ -1,0 +1,122 @@
+/*** Header ***/ 
+.c-header-section {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: var(--color-success);
+    padding: 1rem 1.5rem;
+}
+
+.c-header {
+    flex-direction: column;
+
+    @media (min-width: $mobile) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.c-header__logo {
+    margin-block-end: 1.5rem;
+
+    @media (min-width: $mobile) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-block-end: 0;
+    }
+
+    a {
+        font-weight: bold;
+    }
+}
+
+.c-header__links {
+    flex-direction: column;
+
+    @media (min-width: $mobile) {
+        margin-block-end: 0;
+        flex-direction: row;
+    }
+
+    a {
+        margin-block-end: 0.5rem;
+
+        @media (min-width: $mobile) {
+            margin-block-end: 0;
+            margin-inline-start: 1rem;
+        }
+
+        &:hover {
+            color: var(--color-warning);
+        }
+    }
+}
+
+.c-header__search {
+    margin-block-start: 1rem;
+
+    @media (min-width: $mobile) {
+        margin-block-start: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+/*** Footer ***/ 
+.c-footer-section {
+    background-color: var(--color--success-dark);
+}
+
+.c-footer__container {
+    padding: 5rem 0 3rem 0;
+}
+
+.c-footer__links {
+    margin-block-end: 3rem;
+
+    a {
+        margin: 0 1rem;
+
+        &:hover {
+            color: var(--color-warning);
+        }
+    }
+}
+
+.c-footer__content {
+    background-color: #1b373c;
+}
+
+.c-footer {
+    flex-direction: column;
+    padding: 1rem 0;
+
+    @media (min-width: $mobile-xs) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.c-footer__logo {
+    @media (min-width: $mobile-xs) {
+        display: flex;
+    }
+
+    a {
+        margin-block-start: 1rem;
+        font-weight: bold;
+    }
+}
+
+.c-footer-icon__container {
+    margin-block-start: 0.3rem;
+}
+
+.c-footer__info {
+    margin-block-start: 1rem;
+}

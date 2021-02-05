@@ -1,0 +1,122 @@
+/*** Connect Section ***/ 
+.c-connect {
+    margin-block-start: 3rem;
+}
+
+.c-connect__content {
+    margin-block-end: 1rem;
+
+    h4 {
+        margin-block-end: 0.5rem;
+    }
+}
+
+.c-connect-img__container {
+    margin: 2rem auto;
+
+    @media (min-width: $mobile) {
+        margin: 0 auto;
+    }
+}
+
+/*** Travel Section ***/ 
+.c-travel-section,
+.c-travel-overlay {
+    min-height: 130rem;
+    width: 100%;
+
+    @media (min-width: 280px) {
+        min-height: 110rem;
+    }
+
+    @media (min-width: 350px) {
+        min-height: 100rem;
+    }
+
+    @media (min-width: 450px) {
+        min-height: 90rem;
+    }
+
+    @media (min-width: $mobile) {
+        min-height: 60rem;
+    }
+
+    @media (min-width: $desktop-md) {
+        min-height: 40rem;
+    }
+}
+
+.c-travel-section {
+    background: url('../images/img-bg-adventure.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 68;
+    -ms-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+}
+
+.c-travel-overlay {
+    position: absolute;
+    background-image: -moz-linear-gradient( -45deg, rgba(0,147,175,0.90196) 0%, rgba(0,147,175,0.30196) 100%);
+    background-image: -webkit-linear-gradient( -45deg, rgba(0,147,175,0.90196) 0%, rgba(0,147,175,0.30196) 100%);
+    background-image: -ms-linear-gradient( -45deg, rgba(0,147,175,0.90196) 0%, rgba(0,147,175,0.30196) 100%);
+    z-index: 70;
+
+    h2 {
+        color: var(--color-white);
+    }
+}
+
+.c-travel__container {
+    background-color: var(--color-white);
+
+    &:hover {
+        transform: translateY( -3px ) scale( 1.05 ) rotateX( 15deg );
+    }
+
+    .c-travel-icon__container {
+        color: var(--color-success);
+        margin: 1.5rem 0;
+    }
+
+    h3 {
+        margin-block-end: 1.5rem;
+    }
+
+    p {
+       margin: 0 1.5rem 2rem 1.5rem;
+    }
+}
+
+
+/*** Tours Section ***/ 
+.c-tours-section {
+    margin-block-end: 7rem;
+}
+
+.c-tours__container {
+    max-width: 21.875rem;
+    margin: 0 auto;
+    padding-block-end: 2rem;
+    box-shadow: 5px 5px 5px #a1a1a1,
+                -5px -5px 5px #efefef;
+
+    &:hover {
+        transform: translateY( -3px ) scale( 1.05 ) rotateX( 15deg );
+    }
+
+    h3 {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    p {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    hr {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
